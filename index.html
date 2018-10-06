@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=no">
+        <meta http-equiv="Content-Type" content="IE=EDGE">
+        <title>YumBites | Order local and intercontinental dishes</title>
+        <link rel="stylesheet" href="css/desktop.css"  media="screen and (min-device-width: 900px)">
+        <link rel="stylesheet" href="css/mobile.css" media="screen and (max-device-width: 899px)">
+        <link rel="stylesheet" href="css/lumia.css" media="screen and (device-height: 360px)">
+        <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" href="font-awesome/css/font-awesome.css">
+    </head>
+    <body>
+        <header>
+            <div id="navbar">
+                <button id="sidebar-button" class="bars">
+                    <i id="bars-marker" class="fa fa-bars" style="font-size: 40px;"></i>
+                </button>
+            </div>
+        </header>
+        <div id="flex-holder">
+            <div id="sidebar">
+                <ul>
+                    <li><a class="bar-link" href="#"><i class="fa fa-home" style="color: #fff; font-size: 20px;"></i>   Home</a></li>
+                    <li><a class="bar-link" href="#"><i class="fa fa-book" style="color: #fff; font-size: 20px;"></i>   About</a></li>
+                    <li><a class="bar-link" href="#"><i class="fa fa-cutlery" style="color: #fff; font-size: 20px;"></i>   Meals</a></li>
+                    <li><a class="bar-link" href="#"><i class="fa fa-phone" style="color: #fff; font-size: 20px;"></i>   Hotlines</a></li>
+                </ul>
+            </div>
+            <div class="flex-item">
+                <div id="slider">
+                    <br/>
+                    <br/>
+                    <div id="flex-holder">
+                        <div class="flex-item"></div>
+                        <div class="flex-item">
+                            <button id="order-button" class="order-button">Place Order</button>
+                            <div id="modal" style="display: none;">
+                                <span id="close-modal" class="close-modal">&times;</span>
+                                <div class="modal-form-group">
+                                    <form action="#">
+                                        <label for="name">
+                                            Name:
+                                        </label>
+                                        <br/>
+                                        <input type="text" id="name" class="input-item">
+                                        <br/>
+                                        <label for="email">
+                                            Email:
+                                        </label>
+                                        <br/>
+                                        <input type="email" id="email" class="input-item">
+                                        <br/>
+                                        <label for="meals">
+                                            Available Meals:
+                                        </label>
+                                        <br/>
+                                        <select class="input-item" id="meals">
+                                            <option>Chicken Pourri</option>
+                                            <option>Burrito</option>
+                                            <option>Pizza</option>
+                                        </select>
+                                        <br/>
+                                        <label for="location">
+                                            Location:
+                                        </label>
+                                        <br/>
+                                        <input type="text" id="location" class="input-item">
+                                        <br/>
+                                        <button class="send-order">Make Order</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex-item"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="flex-holder">
+            <div class="flex-item"></div>
+            <div class="flex-item">
+                <span class="slide-indicator"></span>
+                <span class="slide-indicator"></span>
+                <span class="slide-indicator"></span>
+                <span class="slide-indicator"></span>
+                <span class="slide-indicator"></span>
+                <span class="slide-indicator"></span>
+                <span class="slide-indicator"></span>
+            </div>
+            <div class="flex-item"></div>
+        </div>
+        <div id="flex-holder">
+            <div class="flex-item-2">
+                <i class="fa fa-bar-chart" style="font-size: 150px; color: orange;"></i>
+                <br/>
+                With the best rated cuisines. Recommended by critiques. Efficient market strategy to meet consumers' needs while maintaining a good reputation.
+            </div>
+            <div class="flex-item-2">
+                <i class="fa fa-hourglass" style="font-size: 150px; color: yellow;"></i>
+                <br/>
+                Delivered in time to customers dispersed at considerable distances. Employs quick transportation means to ensure quick and appreciated service and delivery.
+            </div>
+            <div class="flex-item-2">
+                <i class="fa fa-globe" style="font-size: 150px; color: blue;"></i>
+                <br/>
+                Delivers anywhere in the world. With shacks and kitchens at locations within consumers' reach all over the globe. Intercontinental and indigenous dishes served.
+            </div>
+        </div>
+        <footer>
+            <div id="footer">
+                <div id="flex-holder">
+                    <div class="flex-item"></div>
+                    <div class="flex-item"></div>
+                    <div class="flex-item">
+                        <i class="fa fa-facebook"></i>
+                        <i class="fa fa-twitter"></i>
+                        <i class="fa fa-instagram"></i>
+                        <i class="fa fa-google-plus"></i>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="js/slider.js"></script>
+        <script src="js/sidebar.js"></script>
+        <script src="js/modal.js"></script>
+    </body>
+</html>
